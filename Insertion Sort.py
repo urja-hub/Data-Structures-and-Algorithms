@@ -2,7 +2,8 @@
 # Please implement the function which takes as an input list of numbers and returns the sorted list
 # Use Insertion Sort algorithm
 
-
+# time complexity: O(n^2)
+#space complexity: O(1)
 def insertion_sort(nums):
     for i in range(1,len(nums)):
         for j in range(0,i):
@@ -10,7 +11,6 @@ def insertion_sort(nums):
                 nums.insert(j, nums[i])
                 del nums[i + 1]
                 break
-    print(nums)
     return nums
 
 # testing code
