@@ -1,3 +1,6 @@
+#Space xomplexity : O(1)
+#Time Complexity : O(n)
+
 from typing import List
 
 class Solution:
