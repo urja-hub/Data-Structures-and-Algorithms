@@ -1,3 +1,9 @@
+#Time Complexity : O(n^2)
+#Space Complexity : O(n)
+
+#Corrected : 
+#Time Complexity : O(nlogn) - because of recursion
+
 def sort_and_merge(arr, left, mid, right):
     # Count the number of elements
     n1= mid -left + 1

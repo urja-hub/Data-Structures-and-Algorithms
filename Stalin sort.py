@@ -1,3 +1,6 @@
+#time complexity : n
+#space complexity : n
+
 def stalin_sort(nums):
     nums_sorted = [nums[0]]
     for i in range(1, len(nums)): 
@@ -10,3 +13,13 @@ expected = [1, 4, 8, 11, 13, 15, 100]
 actual = stalin_sort(ls)
 assert expected == actual, "Mistake in test case 1"
 print('OK')
+
+
+def stalin_sort_in_place(nums):
+    i = 1
+    while i < len(nums):
+        if nums[i] < nums[i - 1]:
+            nums.pop(i)
+        else:
+            i += 1
+    return nums

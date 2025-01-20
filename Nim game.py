@@ -15,4 +15,3 @@ actual = Solution().canWinNim(n)
 assert expected == actual, "Mistake in test case 3"
 
 print('All tests pass!')
-git rebase -i HEAD~4
